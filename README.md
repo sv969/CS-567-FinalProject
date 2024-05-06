@@ -1,4 +1,4 @@
-CS-567 Software (Quality) Assurance Final Project Report<br />
+<strong>CS-567 Software (Quality) Assurance Final Project Report</strong><br />
 Code repository git url :
 https://github.com/sv969/CS-567-FinalProject <br />
 Overview:<br />
