@@ -1,0 +1,109 @@
+# Importing necessary modules
+import random
+import traceback
+from fuzzingbook.ControlFlow import ControlFlowGraph
+
+# Functions to generate random data for testing
+def random_pet_id():
+    return random.randint(1, 1000)
+
+def random_name():
+    return "Pet_" + str(random.randint(1, 1000))
+
+def random_species():
+    species_list = ['Dog', 'Cat', 'Rabbit', 'Bird', 'Fish']
+    return random.choice(species_list)
+
+def random_age():
+    return random.randint(1, 15)
+
+def random_description():
+    return "Description_" + str(random.randint(1, 1000))
+
+def random_medical_record():
+    return {'health': 'good', 'vaccination': 'up-to-date', 'condition': 'healthy'}
+
+def random_volunteer_id():
+    return random.randint(1, 1000)
+
+def random_volunteer_name():
+    return "Volunteer_" + str(random.randint(1, 1000))
+
+def random_event_id():
+    return random.randint(1, 1000)
+
+def random_title():
+    return "Event_" + str(random.randint(1, 1000))
+
+def random_event_description():
+    return "Description_" + str(random.randint(1, 1000))
+
+def random_date():
+    return "Date_" + str(random.randint(1, 1000))
+
+# Define test functions
+def add_pet(adoption_center, pet_id, name, species, age, description, medical_record):
+    try:
+        adoption_center.pets[pet_id] = Pet(pet_id, name, species, age, description, medical_record)
+    except:
+        traceback.print_exc()
+
+def adopt_pet(pet):
+    try:
+        message = pet.adopt()
+        print(message)
+    except:
+        traceback.print_exc()
+
+def update_medical_record(pet, record):
+    try:
+        message = pet.update_medical_record(record)
+        print(message)
+    except:
+        traceback.print_exc()
+
+def get_medical_history(pet):
+    try:
+        history = pet.get_medical_history()
+        print(history)
+    except:
+        traceback.print_exc()
+
+def age_up(pet):
+    try:
+        message = pet.age_up()
+        print(message)
+    except:
+        traceback.print_exc()
+
+def change_description(pet, new_description):
+    try:
+        message = pet.change_description(new_description)
+        print(message)
+    except:
+        traceback.print_exc()
+
+# Initialize the control flow graph
+cfg = ControlFlowGraph()
+
+# Add functions to the control flow graph
+cfg.add_function(add_pet)
+cfg.add_function(adopt_pet)
+cfg.add_function(update_medical_record)
+cfg.add_function(get_medical_history)
+cfg.add_function(age_up)
+cfg.add_function(change_description)
+
+# Define test parameters
+cfg.add_parameter("adoption_center", "AdoptionCenter()")
+cfg.add_parameter("pet_id", "random_pet_id()")
+cfg.add_parameter("name", "random_name()")
+cfg.add_parameter("species", "random_species()")
+cfg.add_parameter("age", "random_age()")
+cfg.add_parameter("description", "random_description()")
+cfg.add_parameter("medical_record", "random_medical_record()")
+cfg.add_parameter("new_description", "random_description()")
+
+# Generate and print test cases
+for i in range(20):
+    print(cfg.get_next_parameter_assignment())
