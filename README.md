@@ -18,6 +18,7 @@ Error Handling:
 
 Testing Process: 
 Here, we have to follow the Testing processes for applications and get the reports. The testing process is a critical phase in software development, ensuring product quality and reliability. It involves various stages such as planning, designing test cases, execution, and reporting. Testers employ techniques like functional testing, regression testing, and user acceptance testing to uncover defects and ensure the software meets requirements. Automation tools streamline repetitive tasks, enhancing efficiency. Continuous integration and delivery practices integrate testing into development workflows, enabling rapid feedback and iteration. Ultimately, a robust testing process enhances user satisfaction, reduces maintenance costs, and fosters trust in the software's performance.
+<br />
 Code coverage:  Code coverage measures the proportion of code executed during testing compared to the total codebase. It helps assess the thoroughness of testing, identifying areas not exercised by test cases. High coverage indicates more comprehensive testing, reducing the likelihood of undiscovered bugs and improving overall software quality. Below screenshot is refers to the code coverage percentage for given problem.
  
 
