@@ -3,16 +3,27 @@ Code repository git url :
 https://github.com/sv969/CS-567-FinalProject <br /><br /><br />
 <strong>Overview:</strong><br />
 The Pet Adoption System’s code has been reviewed to evaluate its structure, functionality, and compliance with best practices. The system consists of several classes for handling pet management, volunteer coordination, events, and inquiries within an adoption center. Below is a detailed report highlighting its strengths. The code does exist on GitHub and was written purely for testing purposes. The testing technologies used include TSTL, unit tests, coverage, and universal mutator. These technologies come together to from a complete and cohesive test suite that can give valuable insights into the validity, correctness and reliability of the code.<br /><br /><br />
-Strengths:<br />
-<strong>Modular Design:</strong> <br /><br /><br />
-• The code is organized into separate classes, each responsible for a specific aspect of the adoption center management.
-• The design encourages code reusability, scalability, and maintainability.
-Clear Class Responsibilities:
-• Each class has well-defined characteristics and methods that represent distinct functionalities.
-• This improves code readability, making it easier to comprehend and maintain.
-Error Handling:
-• Some methods use error handling tools to deal with potential exceptions.
-• This reduces runtime errors and increases system robustness.<br /><br /><br /><br />
+<strong>Strengths:<br />
+Modular Design:</strong> <br /><br />
+
+<ul>
+<li>The code is organized into separate classes, each responsible for a specific aspect of the adoption center management.</li>
+<li>The design encourages code reusability, scalability, and maintainability.</li>
+</ul> <br /><br />
+<strong>Clear Class Responsibilities:</strong><br />
+<ul>
+<li>Each class has well-defined characteristics and methods that represent distinct functionalities.</li>
+<li>This improves code readability, making it easier to comprehend and maintain.</li>
+</ul><br />
+<strong>Error Handling:</strong><br />
+<ul>
+<li>
+Some methods use error handling tools to deal with potential exceptions.
+</li>
+<li>Some methods use error handling tools to deal with potential exceptions.</li>
+<li>This reduces runtime errors and increases system robustness.</li>
+</ui>
+<br /><br />
 
 <strong>Testing Process:</strong>
 Here, we have to follow the Testing processes for applications and get the reports. The testing process is a critical phase in software development, ensuring product quality and reliability. It involves various stages such as planning, designing test cases, execution, and reporting. Testers employ techniques like functional testing, regression testing, and user acceptance testing to uncover defects and ensure the software meets requirements. Automation tools streamline repetitive tasks, enhancing efficiency. Continuous integration and delivery practices integrate testing into development workflows, enabling rapid feedback and iteration. Ultimately, a robust testing process enhances user satisfaction, reduces maintenance costs, and fosters trust in the software's performance.<br /><br /><br />
